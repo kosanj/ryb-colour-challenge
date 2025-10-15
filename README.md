@@ -36,7 +36,7 @@ This project is an interactive **colour mixing game** using a touchscreen, PWM-c
 
 This ensures that the LED reflects what humans expect when mixing “paint-like” colours.
 
----
+
 
 ### **2. CIExy Colour Space for Scoring**
 - **RGB is not perceptually uniform**: Some numerically distant colours look similar to humans, and some close colours look different.  
