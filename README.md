@@ -3,6 +3,8 @@
 ## Overview
 This project is an interactive **colour mixing game** using a touchscreen, PWM-controlled RGB LED, and an LCD display. The LED first displays a **random target colour**, and users try to match it by selecting **quantities of five available colours** (Red, Yellow, Blue, White, Black) on the touchscreen. The game calculates a score based on **human visual perception**, rewarding mixes that closely resemble the target LED colour rather than pure comparison to RGB.
 
+https://github.com/user-attachments/assets/a437df26-9282-4c48-b0f5-5ebe3eeef0ee
+
 ---
 
 ## Hardware Requirements
