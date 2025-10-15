@@ -1,0 +1,15 @@
+# Treat most files as vendored by default
+* linguist-vendored
+
+# Include your main code
+*.c linguist-vendored=false
+*.cpp linguist-vendored=false
+
+# Mark library/vendor folders as vendored
+**/Drivers/** linguist-vendored=true
+**/CMSIS/** linguist-vendored=true
+**/Libraries/** linguist-vendored=true
+**/third_party/** linguist-vendored=true
+**/External/** linguist-vendored=true
+**/vendor/** linguist-vendored=true
+**/Utilities/** linguist-vendored=true
