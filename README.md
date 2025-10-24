@@ -5,6 +5,35 @@ This project is an interactive **colour mixing game** using a touchscreen, PWM-c
 
 https://github.com/user-attachments/assets/a437df26-9282-4c48-b0f5-5ebe3eeef0ee
 
+#### Program Control Flow: 
+Finite state machine (FSM) diagram illustrating program flow:
+
+<img width="460" height="396" alt="Screenshot 2025-10-23 at 11 28 47 PM" src="https://github.com/user-attachments/assets/4cba7c8e-bdc3-4d04-a026-3a140746ab24" />
+
+Detailed program flow explaining provess of calculating similarity score:
+```text
+Random LED target → display RGB on LED
+        │
+        ▼
+User taps colours → counters increment
+        │
+        ▼
+Convert user RGB selection → RYB
+        │
+        ▼
+Mix colours in RYB
+        │
+        ▼
+Convert mixed RYB → RGB → update LED
+        │
+        ▼
+Convert both target RGB & user RGB → CIExy
+        │
+        ▼
+Calculate distance → Percentage score → display
+```
+
+
 ---
 
 ## Hardware Requirements
@@ -65,7 +94,6 @@ This results in a score that aligns with **how a human would perceive colour sim
 
 ---
 
-
 ## Touchscreen Colour Selection
 - **Colour boxes**: Red, Yellow, Blue, White, Black  
 - **Counters**: Each tap increments the corresponding colour count.  
@@ -73,24 +101,3 @@ This results in a score that aligns with **how a human would perceive colour sim
 
 ---
 
-## Game Flow Diagram
-```text
-Random LED target → display RGB on LED
-        │
-        ▼
-User taps colours → counters increment
-        │
-        ▼
-Convert user RGB selection → RYB
-        │
-        ▼
-Mix colours in RYB
-        │
-        ▼
-Convert mixed RYB → RGB → update LED
-        │
-        ▼
-Convert both target RGB & user RGB → CIExy
-        │
-        ▼
-Calculate distance → Percentage score → display
