@@ -63,13 +63,6 @@ This results in a score that aligns with **how a human would perceive colour sim
 
 ---
 
-## Touchscreen Colour Selection
-- **Colour boxes**: Red, Yellow, Blue, White, Black  
-- **Counters**: Each tap increments the corresponding colour count.  
-- **LED update**: The LED updates in real-time to show the mixed colour.  
-
----
-
 ## Program Control Flow: 
 #### Finite state machine (FSM) diagram illustrating program flow:
 
